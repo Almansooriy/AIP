@@ -18,10 +18,10 @@ parent(lina,dana).
 parent(layla,yousef).
 parent(layla,rayan).
 
-father(x,y) :- male(x), parent(x,y).
+father(X,Y) :- male(X), parent(X,Y).
 
-mother(x,y) :- female(x), parent(x,y).
+mother(X,Y) :- female(X), parent(X,Y).
 
-sister(x,y) :- female(x), parent(p,x), parent(p,y), x\=y.
+sister(X,Y) :- female(X), parent(P,X), parent(P,Y), X\=Y.
 
-brother(x,y) :- male(x), parent(p,x), parent(p,y), x\=y.
+brother(X,Y) :- male(X), parent(P,X), parent(P,Y), X\=Y.
