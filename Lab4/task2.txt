@@ -1,0 +1,19 @@
+15 ?- female(X).
+X = sara ;
+X = nora.
+
+16 ?- male(_).
+true .
+
+17 ?- parent(GP, muhammad), parent(muhammad, faisal).
+GP = ali.
+
+18 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora .
+
+19 ?- parent(P, ahmad), parent(P, muhammad).
+P = ali.
+
+20 ?- male(khan), parent(P, khan), parent(P, nora), khan \= nora.
+P = ahmad.

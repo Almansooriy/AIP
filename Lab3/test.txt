@@ -1,0 +1,12 @@
+15 ?- father(X,layla).
+X = omar .
+
+16 ?- mother(X,layla).
+X = lina .
+
+17 ?- father(X,Y).
+X = omar,
+Y = layla 
+Unknown action: m (h for help)
+Action? .
+
