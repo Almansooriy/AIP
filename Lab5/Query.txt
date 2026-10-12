@@ -1,0 +1,29 @@
+22 ?- ancestor(jackie, maggie).
+true .
+
+23 ?- ancestor(abraham, bart).
+true .
+
+24 ?- cousin(bart, ling).
+true .
+
+25 ?- cousin(lisa, ling).
+true .
+
+26 ?- uncle(herb, bart).
+true .
+
+27 ?- uncle(herb, lisa).
+true .
+
+28 ?- aunt(selma, lisa).
+true .
+
+29 ?- aunt(patty, bart).
+true .
+
+30 ?- grandfather(clancy, lisa).
+true .
+
+31 ?- grandfather(abraham, bart).
+true.
