@@ -20,6 +20,7 @@ play(1) :-
     write('1 - to choose to play with bat'), nl,
     write('2 - to choose to play with racket'), nl,
     write('3 - to choose to play with bare hands'), nl,
+    write('4 - to choose to play football'), nl, % <- الإضافة الجديدة للألعاب الجارية
     write('-->> Enter option: '),
     read(Y),
     ropt(Y),
@@ -30,7 +31,8 @@ play(2) :-
     write('Welcome to Non-Running Games'), nl,
     write('--------------------------'), nl,
     write('1 - to choose to play individual'), nl,
-    write('2 - to choose to play in a group'), nl, nl,
+    write('2 - to choose to play in a group'), nl,
+    write('3 - to choose to play chess'), nl,     % <- الإضافة الجديدة للألعاب غير الجارية
     write('-->> Enter option: '),
     read(Z),
     opt(Z),
@@ -48,11 +50,13 @@ play(_) :-
 ropt(1) :- nl, write('--( You want to play cricket )--'), nl, nl.
 ropt(2) :- nl, write('--( You want to play Tennis )--'), nl, nl.
 ropt(3) :- nl, write('--( You want to play Rugby )--'), nl, nl.
+ropt(4) :- nl, write('--( You want to play Football )--'), nl, nl. % <- تنفيذ الخيار الجديد
 ropt(_) :- nl, write(' -->> You chose the wrong option...  :( '), nl.
 
 % ---------- non-running games ----------
 opt(1) :- nl, write('--<< You want to play Tai chi >>--'), nl, nl.
 opt(2) :- nl, write('--<< You want to play Volleyball >>--'), nl, nl.
+opt(3) :- nl, write('--<< You want to play Chess >>--'), nl, nl.     % <- تنفيذ الخيار الجديد
 opt(_) :- nl, write('Wrong selection...   :( '), nl.
 
 % ---------- go round again, or stop ----------

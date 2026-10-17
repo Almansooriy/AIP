@@ -24,3 +24,19 @@ can_buy(Cost) :-
 
 % =================================================================
 % LAB TASK 1 - MODEL ANSWER  (also consider the colour)
+
+can_buy_car(Cost, DesiredColour) :-
+    car(Model, C1, _, Colour, _),
+    C1 < Cost,
+    Colour = DesiredColour,
+    write('With '), write(C1),
+    write(' you can purchase the '), write(Colour),
+    write(' car model: '), write(Model), nl.
+
+can_buy_truck(Cost, DesiredColour) :-
+    truck(Model, C2, _, Colour, _),
+    C2 < Cost,
+    Colour = DesiredColour,
+    write('With '), write(C2),
+    write(' you can purchase the '), write(Colour),
+    write(' truck model: '), write(Model), nl.
